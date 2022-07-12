@@ -9,6 +9,12 @@
     <title>My Portfolio</title>
 </head>
 <body>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querrySelector("header");
+            header.classList.toggle("sticky",window.scrollY > 0);
+        })
+    </script>
     <header id="home">
         <a href="#" class="logo">Adams <span>Echwa</span> </a>
         <ul>
